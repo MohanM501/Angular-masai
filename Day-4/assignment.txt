@@ -1,0 +1,1 @@
+Create an example where child component can send 2 properties to parent component; (already done by me in steps only)

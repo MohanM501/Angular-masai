@@ -9,6 +9,28 @@ To filter / select - It's not possible for nested child (when you are trying to 
     public count:10 (this is also public property);
   }
 
-  - Both binding works:- <app-child quantity={{count}}>  or <app-child [quantity]="count">
+  - Both binding works:- <app-child quantity={{count}}>  or <app-child [quantity]="count"> 
 
-  
+  - <app-child [quantity]="count">  with this  count:number=0 worked (number type worked in both parent and child) but didn't work with this <app-child quantity={{count}}> 
+
+  - Content Projection:- sending the template from parent to child component; and you can acceess it using the directive called <ng-content>
+
+  - this.childEvent.emit(); // here emit is dispatching event from child  to parent ;
+
+
+  - folder (want to create a project without creating application);
+
+  ng new folder --create-application=false
+
+  // To generate new project inside the folder;
+
+  cd folder
+
+  ng g application communication --routing=false --style=css -t -s -S
+
+    (-t -> I don't want to generate the template files
+    -s -> I don't want to generate any external css files
+    -S -> I don't want to generate any external testing files
+    )
+    
+    - Multi-Projects time use ng new projectName
