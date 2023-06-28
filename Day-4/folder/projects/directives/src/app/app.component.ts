@@ -13,10 +13,21 @@ import { Component } from '@angular/core';
       <p>Lorem</p>
     </fieldset>
     
+    <ng-template [ngIf]="!show" >{{title}}</ng-template>
+
+    <hr>
+    <ul>
+        <li>{{avengers[0]}}</li>
+    </ul>
+    <ol>
+        <li *ngFor="let hero of avengers">{{hero}}</li>
+    </ol>
+    
   `,
   styles: []
 })
 export class AppComponent {
   title = 'directives';
-  show=true;
+  show=false;
+  avengers=["Ironman","Spiderman","Thor","Lockie","Captain America","Hawkeye","Antman","Groot"]
 }

@@ -34,3 +34,5 @@ To filter / select - It's not possible for nested child (when you are trying to 
     )
     
     - Multi-Projects time use ng new projectName
+
+<div *ngIf="!show">{{title}}</div>     is equal to       <ng-template [ngIf]="!show">{{title}}</ng-template> (this is used when you want to show or hide the content(text like title) ,not element; that time you can use ng-template(one type of directive))
