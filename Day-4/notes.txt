@@ -1,1 +1,14 @@
 In scripts => "start": "ng serve";
+<ng-Content></ng-Content> is a directive;
+
+To filter / select - It's not possible for nested child (when you are trying to filter from parent to child, if parent has nested child then those nested child are not be able to filter, but first level child can be filtered/selected )
+
+# In TypeScript
+  class abc{
+    count:5 (by default it is a public property);
+    public count:10 (this is also public property);
+  }
+
+  - Both binding works:- <app-child quantity={{count}}>  or <app-child [quantity]="count">
+
+  
