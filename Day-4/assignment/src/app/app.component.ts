@@ -2,8 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+   <app-topbar/>
+   <app-header/>
+   <app-main/>
+   <app-footer/>
+   
+  `
+  
+  
 })
 export class AppComponent {
   title = 'assignment';
