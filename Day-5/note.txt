@@ -1,0 +1,71 @@
+ to change the default port;
+
+ ## ng serve step-1-directives -o --port=5050
+
+ ## <p *ngFor="let hero of avengers; index as idx">{{idx}}-{{hero}}</p>
+
+ In the above p tag index can't be directly used inside the p tag ; you have to take it using "as" keyword ; because index is read only in angular; you can't use it.
+
+ ## <ng-template ngFor let-hero [ngForOf]="avengers">
+      {{hero}}
+   </ng-template>
+
+   (ng-template is used when you want to loop through without the help of elements we use ng-template);
+
+   In output ; list of heros will be on one line; because these are not wrapped inside the elements;
+   if you want ; then do inspect you can see only text not wrapped inside elements;
+
+# Over loads css ; it shows only red; for below; it depends on order which is written first for this below condition;
+- THis is called as casceding (overwrites)
+<p [ngClass]="{redBox:rateing>1,blueBox:rateing>3}">Ng clllass</p>
+.blueBox{
+      width:20px;
+       background-color:blue;
+     }
+     .redBox{
+       width:20px;
+       background-color:red;
+     }
+
+
+## Binding Summary
+
+{{}}  for Interpolation
+[] for property  Binding;
+() for event binding;
+[(ngModel)] for 2 way binding
+# template reference / for variable declaration
+* for structural binding  (eg; *ng)
+$ for event 
+` for multiple strings
+? optional properties
+
+- ng g application step-2-pipes --routing=false --style=css -t -s -S
+
+
+
+### Pipes/formaters
+
+Built in Pipes
+Passing parameters to Pipes
+Chaining pipes
+async pipes
+Custom pipes
+
+
+-- Built in pipes
+ -- When you get object to display on dom; (hero is object)
+
+ <ul>
+    <ol *ngFor="let hero of heroes">{{hero}}</ol>
+   </ul>
+o/p -> [object Object]
+[object Object]
+[object Object]
+[object Object]
+[object Object]
+
+
+
+
+
