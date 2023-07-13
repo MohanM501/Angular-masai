@@ -31,7 +31,7 @@
 ## Binding Summary
 
 {{}}  for Interpolation
-[] for property  Binding;
+[] for property Binding;
 () for event binding;
 [(ngModel)] for 2 way binding
 # template reference / for variable declaration
@@ -64,6 +64,8 @@ o/p -> [object Object]
 [object Object]
 [object Object]
 [object Object]
+
+overflow:'scroll' to make div as scrollabel
 
 
 
